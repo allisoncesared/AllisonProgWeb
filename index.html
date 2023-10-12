@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Allison César</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Allison César</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./img/Bode_Profile 2.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, Eu Sou</p>
+      <h1 class="title">Allison César</h1>
+      <p class="section__text__p2">Backend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./img/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contato
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./img/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+        <img src="./img/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Conheça mais</p>
+    <h1 class="title">Sobre Mim</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./img/Programacao_img 1.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./img/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiência</h3>
+            <p>1+ Ano <br />Backend Development</p>
+          </div>
+
+          <div class="details-container">
+            <img src="./img/education.png" alt="Education icon" class="icon" />
+            <h3>Educação</h3>
+            <p>Análise e <br>Desenvolvimento<br />de Sistemas <br><strong>Uninter</strong></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Sou um apaixonado pelo desenvolvimento de soluções inovadoras na área da programação, dedicado a entregar resultados que impulsionam e transformam os negócios. A prática do pensamento crítico é uma parte essencial da minha rotina diária. Tenho grande satisfação em explorar novas abordagens e identificar as formas mais eficientes de realizar tarefas, seja ao criar um site de ponta ou durante minhas intensas sessões de treino na academia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explorar MInhas</p>
+    <h1 class="title">Experiências</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Formações</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>Uninter</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C# Orientado a Objetos</h3>
+                <p>Udemy</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Inglês</h3>
+                <p>Uninter</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ASP .NET</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>c#</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Navegar por Meus</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./img/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+
+          <h2 class="experience-sub-title project-title">Primeiro Projeto</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./img/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Segundo Projeto</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Entre em Contato</p>
+    <h1 class="title">Contate-Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./img/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">Allisoncesared@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./img/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
